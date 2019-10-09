@@ -125,4 +125,78 @@ class People():
         self._name = val
 
 people = People()
-people.name = "admin"
+# people.name = "admin"
+
+# 多重继承
+class Boy(User,Young):
+    pass
+
+# Boy 拥有了 study  walk  两个技能
+print(dir(Boy))
+
+# 特殊形式表达
+class Boy(User,Young):
+    def __len__(self):
+        return 100
+# __len__
+print(len(Boy()))
+
+class Boy(User,Young):
+    def __str__(self):
+        return "the object inherit <User>.<Young>"
+    __repr__ = __str__
+# __len__
+print(Boy())
+
+import random
+class Boy():
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        age = random.randint(0,100)
+        if age>90:
+            raise StopIteration()
+        return age
+
+b_age = Boy()
+for val in b_age:
+    print(val)
+
+class Boy():
+    def __getitem__(self,index):
+        return index*2
+
+print(Boy()[4])
+
+
+# print(Boy()())
+print(callable(Boy()))
+class Boy():
+    def __call__(self):
+        print("olololololo")
+Boy()()
+
+from enum import Enum
+Names = Enum("names",("靓仔","校长","鸽吻"))
+
+print(Names(2))
+for name,member in Names.__members__.items():
+    print(name,member,member.value)
+
+from enum import Enum,unique
+@unique
+class Address(Enum):
+    程序员 = 0
+    公务员 = 1
+    教师 = 2
+
+print(Address(0),Address(2))
+
+# type() 创建一个新类
+def getAge(self):
+    return random.randint(20,50)
+
+User_Age =type("User_Age",(object,),dict(getAge = getAge))
+
+print(User_Age().getAge())
