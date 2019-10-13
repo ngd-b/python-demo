@@ -46,3 +46,15 @@
 5. 枚举类型
 6. 使用元类，动态创建类，改变类的行为。
 
+
+#### 基础四
+
+[python 基础四](https://blog.csdn.net/heroboyluck/article/details/102513311)
+
+文件包括`four.py`,定义一个名称校验类`four_form.py`,用于测试校验`four_test.py`
+
+1. 错误处理、捕获；自定义错误类型`BaseException`；
+2. 调试：日志打印、断点调试`pdb`；
+3. 单元测试`unittest`
+4. 文档测试：注释中可执行代码，运行与命令行模式，`doctest`
+
