@@ -87,3 +87,30 @@ print(os.path.exists("./foo"))
 print(os.path.getsize("../")) 
 # 返回指定路径是否为绝对路径       False
 print(os.path.isabs("../"))
+
+
+'''
+线程与进程
+实现多进程、由主进程来创建
+实现多线程
+'''
+# Linux 下使用 os模块中的 fork 方法
+# windows 下使用multiprocessing
+from multiprocessing import Process
+import os
+
+print("current process id:",os.getpid())
+# 创建一个子进程
+def callback(info):
+    print("call the fn in process id:",os.getpid())
+    print("get args' info:",info)
+
+if __name__ == "__main__":
+    childP = Process(target=callback,args=('child',))
+    # start 启动
+    childP.start()
+    # join 等待子进程执行完毕后继续执行
+    childP.join()
+    print("inner ending...")
+print("outer ending...")
+
