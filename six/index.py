@@ -37,3 +37,46 @@ app.master.title("hello world")
 # print(app.master.size)
 app.master.minsize(300,300)
 app.mainloop()
+
+'''
+绘制图形、turtle库
+'''
+import turtle
+
+
+# 中心点(0.00,0.00)为原点开始,指定点的位置
+turtle.setpos(100,100)
+turtle.goto(40,100)
+# 回到原点
+turtle.home()
+turtle.color("red","green")
+# 绘制一个正方形,不调用填充
+num = 0
+while True:
+    turtle.forward(75)
+    turtle.right(90)
+    num+=1
+    if num>3:
+        break
+# 绘制一个圆，调用填充、fill
+turtle.begin_fill()
+turtle.setpos(-150,0)
+turtle.circle(90)
+turtle.end_fill()
+
+# 隐藏绘制图形中移动的光标
+turtle.hideturtle()
+# 绘制一个文本
+turtle.color("#2312fa")
+turtle.setpos(-100,200)
+turtle.write("hello world!",False,align="left",font=("heiti",16,"bold"))
+# turtle.write((0,0),True)
+
+# 绑定一个事件
+def handleEvent():
+    turtle.forward(200)
+    turtle.write("onclick",False)
+turtle.onclick(handleEvent)
+# turtle.onclick(None)
+
+turtle.done()

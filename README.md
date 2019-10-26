@@ -13,7 +13,7 @@
 * 执行文件`python index.py`
 * 所有的代码都在同一个文件`*.py`中，各部分引用变量一致。
 
-#### 基础一
+#### 基础一 :one:
 
 [Python基础](https://blog.csdn.net/heroboyluck/article/details/101848511)
 
@@ -24,7 +24,7 @@
 5. 循环：`for...in...  、  while`
 6. 函数：`*`可变参数、`**`可选参数
 
-#### 基础二
+#### 基础二 :two:
 
 [Python基础二](https://blog.csdn.net/heroboyluck/article/details/101876162)
 
@@ -35,7 +35,7 @@
 5. 模块:`from...import...`导入某个模块功能 / `import...`导入整个模块
 6. 正则表达式：字符串自身的转义`r""`.提前编译正则`re.compile()`
 
-#### 基础三
+#### 基础三 :three:
 
 [Python 基础三](https://blog.csdn.net/heroboyluck/article/details/102468872)
 
@@ -47,10 +47,11 @@
 6. 使用元类，动态创建类，改变类的行为。
 
 
-#### 基础四
+#### 基础四 :four:
 
 [python 基础四](https://blog.csdn.net/heroboyluck/article/details/102513311)
 
+**文件目录`four`:**
 文件包括`four.py`,定义一个名称校验类`four_form.py`,用于测试校验`four_test.py`
 
 1. 错误处理、捕获；自定义错误类型`BaseException`；
@@ -58,3 +59,16 @@
 3. 单元测试`unittest`
 4. 文档测试：注释中可执行代码，运行与命令行模式，`doctest`
 
+
+#### 基础五 :five:
+
+:dog:
+
+#### 基础六 :six:
+[python 基础六](https://blog.csdn.net/heroboyluck/article/details/102691412)
+
+文件目录`six` ，包括图形化界面`tkinter`,自定义图形`turtle`; TCP/IP通信
+
+1. `tkinter`图形化界面展示，`Entry/Label/Button`
+2. `turtle`自定义绘制图形 ;
+3. `socket`通信，服务端、客户端实例；
