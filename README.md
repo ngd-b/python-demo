@@ -72,3 +72,16 @@
 1. `tkinter`图形化界面展示，`Entry/Label/Button`
 2. `turtle`自定义绘制图形 ;
 3. `socket`通信，服务端、客户端实例；
+
+#### 基础七 :seven:
+
+[python 基础七](https://blog.csdn.net/heroboyluck/article/details/102762792)
+
+文件目录 `seven`, 发送邮件`SMTP`协议；接受邮件`POP3`协议
+
+1. 邮件发送：文本、图片、附件；
+2. 身份认证：指定邮箱、`SMTP`服务、授权码
+3. 邮件接收：邮件消息结构、`as_string()`输出信息。
+
+:star2: :star2: :star2:
+> 邮件消息具体还在努力。。。
